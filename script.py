@@ -67,8 +67,8 @@ def scrapeFollowersFromAnAccount(mode="followers"):
     usernameToLook = scrapeAccountName() #Perché l'idea è che, cercando per hashtag, voglia fare lo scraping di un utente qualsiasi
     api.s.transfer_driver_cookies_to_session()
     usernameToLook = api.castUsernameToUserID(usernameToLook) #Idem del commento precedente
-    username = "narutosama123"
-    password = "gundam123"
+    username = "INSERT USERNAME"
+    password = "INSERT PASSWORD"
     device_id = generate_device_id(get_seed(username, password))
     uuid = generate_UUID(True)
     rank_token = "{}_{}".format(usernameToLook, uuid)
